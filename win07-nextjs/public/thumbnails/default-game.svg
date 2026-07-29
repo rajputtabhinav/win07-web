@@ -1,0 +1,27 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="defaultGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4A90E2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7B68EE;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#defaultGradient)"/>
+  
+  <!-- Game Icon -->
+  <circle cx="200" cy="150" r="60" fill="rgba(255,255,255,0.2)"/>
+  <circle cx="200" cy="150" r="40" fill="rgba(255,255,255,0.3)"/>
+  
+  <!-- Play Symbol -->
+  <polygon points="180,130 180,170 220,150" fill="white"/>
+  
+  <!-- Decorative Elements -->
+  <circle cx="120" cy="80" r="15" fill="rgba(255,255,255,0.1)"/>
+  <circle cx="280" cy="220" r="20" fill="rgba(255,255,255,0.1)"/>
+  <circle cx="350" cy="100" r="12" fill="rgba(255,255,255,0.1)"/>
+  
+  <!-- Title Background -->
+  <rect x="0" y="0" width="400" height="50" fill="rgba(0,0,0,0.8)"/>
+  <text x="200" y="30" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="24" font-weight="bold">GAME</text>
+</svg>

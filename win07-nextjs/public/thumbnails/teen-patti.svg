@@ -1,0 +1,99 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="backgroundGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1F2937;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0F172A;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="tableGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#059669;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#047857;stop-opacity:1" />
+    </linearGradient>
+    <filter id="cardShadow">
+      <feDropShadow dx="2" dy="2" stdDeviation="2" flood-color="rgba(0,0,0,0.3)"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#backgroundGradient)"/>
+  
+  <!-- Table -->
+  <ellipse cx="200" cy="150" rx="180" ry="120" fill="url(#tableGradient)"/>
+  <ellipse cx="200" cy="150" rx="160" ry="100" fill="none" stroke="#065f46" stroke-width="3"/>
+  
+  <!-- Table felt pattern -->
+  <defs>
+    <pattern id="feltPattern" patternUnits="userSpaceOnUse" width="20" height="20">
+      <rect width="20" height="20" fill="rgba(255,255,255,0.02)"/>
+      <circle cx="10" cy="10" r="1" fill="rgba(255,255,255,0.05)"/>
+    </pattern>
+  </defs>
+  <ellipse cx="200" cy="150" rx="160" ry="100" fill="url(#feltPattern)"/>
+  
+  <!-- Dealer Cards (face down) -->
+  <g transform="translate(200,80)">
+    <rect x="-45" y="-25" width="30" height="45" rx="5" fill="white" filter="url(#cardShadow)"/>
+    <rect x="-43" y="-23" width="26" height="41" rx="3" fill="#1E40AF"/>
+    <g fill="#FBBF24" transform="translate(-30,-2)">
+      <polygon points="0,0 6,3 12,0 9,6 15,9 9,12 12,18 6,15 0,18 3,12 -3,9 3,6"/>
+    </g>
+    
+    <rect x="-10" y="-25" width="30" height="45" rx="5" fill="white" filter="url(#cardShadow)"/>
+    <rect x="-8" y="-23" width="26" height="41" rx="3" fill="#1E40AF"/>
+    <g fill="#FBBF24" transform="translate(5,-2)">
+      <polygon points="0,0 6,3 12,0 9,6 15,9 9,12 12,18 6,15 0,18 3,12 -3,9 3,6"/>
+    </g>
+    
+    <rect x="25" y="-25" width="30" height="45" rx="5" fill="white" filter="url(#cardShadow)"/>
+    <rect x="27" y="-23" width="26" height="41" rx="3" fill="#1E40AF"/>
+    <g fill="#FBBF24" transform="translate(40,-2)">
+      <polygon points="0,0 6,3 12,0 9,6 15,9 9,12 12,18 6,15 0,18 3,12 -3,9 3,6"/>
+    </g>
+  </g>
+  
+  <!-- Player Cards (face up) -->
+  <g transform="translate(200,220)">
+    <!-- King of Hearts -->
+    <rect x="-45" y="-25" width="30" height="45" rx="5" fill="white" filter="url(#cardShadow)"/>
+    <text x="-35" y="-15" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#DC2626">K</text>
+    <text x="-35" y="15" font-family="Arial, sans-serif" font-size="16" fill="#DC2626">♥</text>
+    
+    <!-- Queen of Diamonds -->
+    <rect x="-10" y="-25" width="30" height="45" rx="5" fill="white" filter="url(#cardShadow)"/>
+    <text x="0" y="-15" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#DC2626">Q</text>
+    <text x="0" y="15" font-family="Arial, sans-serif" font-size="16" fill="#DC2626">♦</text>
+    
+    <!-- Jack of Hearts -->
+    <rect x="25" y="-25" width="30" height="45" rx="5" fill="white" filter="url(#cardShadow)"/>
+    <text x="35" y="-15" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#DC2626">J</text>
+    <text x="35" y="15" font-family="Arial, sans-serif" font-size="16" fill="#DC2626">♥</text>
+  </g>
+  
+  <!-- VS indicator -->
+  <circle cx="200" cy="150" r="25" fill="rgba(0,0,0,0.8)"/>
+  <text x="200" y="155" text-anchor="middle" fill="#FBBF24" font-family="Arial, sans-serif" font-size="16" font-weight="bold">VS</text>
+  
+  <!-- Hand type indicator -->
+  <rect x="120" y="260" width="160" height="30" rx="15" fill="rgba(0,0,0,0.8)"/>
+  <text x="200" y="280" text-anchor="middle" fill="#10B981" font-family="Arial, sans-serif" font-size="18" font-weight="bold">PURE SEQUENCE</text>
+  
+  <!-- Multiplier -->
+  <rect x="320" y="200" width="70" height="35" rx="17" fill="rgba(245,158,11,0.2)"/>
+  <text x="355" y="222" text-anchor="middle" fill="#F59E0B" font-family="Arial, sans-serif" font-size="20" font-weight="bold">4.0x</text>
+  
+  <!-- Betting chips -->
+  <g transform="translate(50,180)">
+    <circle cx="0" cy="0" r="12" fill="#DC2626"/>
+    <circle cx="0" cy="0" r="8" fill="#EF4444"/>
+    <text x="0" y="3" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="8" font-weight="bold">100</text>
+  </g>
+  
+  <g transform="translate(350,120)">
+    <circle cx="0" cy="0" r="12" fill="#059669"/>
+    <circle cx="0" cy="0" r="8" fill="#10B981"/>
+    <text x="0" y="3" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="8" font-weight="bold">500</text>
+  </g>
+  
+  <!-- Title -->
+  <rect x="0" y="0" width="400" height="50" fill="rgba(0,0,0,0.9)"/>
+  <text x="200" y="30" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="26" font-weight="bold">TEEN PATTI</text>
+</svg>

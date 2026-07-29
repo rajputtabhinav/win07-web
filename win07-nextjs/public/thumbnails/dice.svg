@@ -1,0 +1,109 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="backgroundGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1F2937;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0F172A;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="diceGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E5E7EB;stop-opacity:1" />
+    </linearGradient>
+    <filter id="diceShadow">
+      <feDropShadow dx="4" dy="4" stdDeviation="4" flood-color="rgba(0,0,0,0.3)"/>
+    </filter>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#backgroundGradient)"/>
+  
+  <!-- Dice rolling motion lines -->
+  <g stroke="rgba(255,255,255,0.2)" stroke-width="2" opacity="0.6">
+    <path d="M 50 100 Q 100 80 150 100 Q 200 120 250 100" fill="none" stroke-dasharray="5,5"/>
+    <path d="M 100 180 Q 150 160 200 180 Q 250 200 300 180" fill="none" stroke-dasharray="3,3"/>
+  </g>
+  
+  <!-- First Die (showing 6) -->
+  <g transform="translate(120,100) rotate(-15)">
+    <!-- Die faces -->
+    <path d="M 0,0 L 50,0 L 60,10 L 10,10 Z" fill="url(#diceGradient)" filter="url(#diceShadow)"/>
+    <path d="M 50,0 L 50,50 L 60,60 L 60,10 Z" fill="#D1D5DB"/>
+    <path d="M 0,0 L 0,50 L 50,50 L 50,0 Z" fill="url(#diceGradient)"/>
+    <path d="M 0,50 L 10,60 L 60,60 L 50,50 Z" fill="#9CA3AF"/>
+    
+    <!-- Dots on visible face (6) -->
+    <circle cx="12" cy="12" r="4" fill="#1F2937"/>
+    <circle cx="38" cy="12" r="4" fill="#1F2937"/>
+    <circle cx="12" cy="25" r="4" fill="#1F2937"/>
+    <circle cx="38" cy="25" r="4" fill="#1F2937"/>
+    <circle cx="12" cy="38" r="4" fill="#1F2937"/>
+    <circle cx="38" cy="38" r="4" fill="#1F2937"/>
+    
+    <!-- Dots on side face (3) -->
+    <circle cx="53" cy="12" r="3" fill="#374151"/>
+    <circle cx="53" cy="25" r="3" fill="#374151"/>
+    <circle cx="53" cy="38" r="3" fill="#374151"/>
+  </g>
+  
+  <!-- Second Die (showing 4) -->
+  <g transform="translate(220,130) rotate(20)">
+    <!-- Die faces -->
+    <path d="M 0,0 L 50,0 L 60,10 L 10,10 Z" fill="url(#diceGradient)" filter="url(#diceShadow)"/>
+    <path d="M 50,0 L 50,50 L 60,60 L 60,10 Z" fill="#D1D5DB"/>
+    <path d="M 0,0 L 0,50 L 50,50 L 50,0 Z" fill="url(#diceGradient)"/>
+    <path d="M 0,50 L 10,60 L 60,60 L 50,50 Z" fill="#9CA3AF"/>
+    
+    <!-- Dots on visible face (4) -->
+    <circle cx="15" cy="15" r="4" fill="#1F2937"/>
+    <circle cx="35" cy="15" r="4" fill="#1F2937"/>
+    <circle cx="15" cy="35" r="4" fill="#1F2937"/>
+    <circle cx="35" cy="35" r="4" fill="#1F2937"/>
+    
+    <!-- Dots on side face (2) -->
+    <circle cx="53" cy="18" r="3" fill="#374151"/>
+    <circle cx="53" cy="32" r="3" fill="#374151"/>
+  </g>
+  
+  <!-- Prediction arrows and multipliers -->
+  <g transform="translate(50,200)">
+    <rect x="0" y="0" width="80" height="30" rx="15" fill="rgba(16,185,129,0.2)"/>
+    <text x="40" y="20" text-anchor="middle" fill="#10B981" font-family="Arial, sans-serif" font-size="14" font-weight="bold">OVER 7</text>
+  </g>
+  
+  <g transform="translate(150,200)">
+    <rect x="0" y="0" width="80" height="30" rx="15" fill="rgba(239,68,68,0.2)"/>
+    <text x="40" y="20" text-anchor="middle" fill="#EF4444" font-family="Arial, sans-serif" font-size="14" font-weight="bold">UNDER 7</text>
+  </g>
+  
+  <g transform="translate(270,200)">
+    <rect x="0" y="0" width="80" height="30" rx="15" fill="rgba(245,158,11,0.2)"/>
+    <text x="40" y="20" text-anchor="middle" fill="#F59E0B" font-family="Arial, sans-serif" font-size="14" font-weight="bold">EXACT 7</text>
+  </g>
+  
+  <!-- Current roll result -->
+  <rect x="150" y="250" width="100" height="35" rx="17" fill="rgba(16,185,129,0.8)"/>
+  <text x="200" y="272" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="20" font-weight="bold">TOTAL: 10</text>
+  
+  <!-- Multiplier display -->
+  <g transform="translate(320,120)">
+    <rect x="0" y="0" width="60" height="25" rx="12" fill="rgba(251,191,36,0.2)"/>
+    <text x="30" y="17" text-anchor="middle" fill="#FBBF24" font-family="Arial, sans-serif" font-size="14" font-weight="bold">2.5x</text>
+  </g>
+  
+  <!-- Sparkle effects -->
+  <g fill="#FBBF24" opacity="0.8">
+    <polygon points="80,60 82,66 88,66 83,70 85,76 80,72 75,76 77,70 72,66 78,66" transform="scale(0.6)"/>
+    <polygon points="300,80 302,86 308,86 303,90 305,96 300,92 295,96 297,90 292,86 298,86" transform="scale(0.5)"/>
+    <polygon points="360,160 362,166 368,166 363,170 365,176 360,172 355,176 357,170 352,166 358,166" transform="scale(0.4)"/>
+  </g>
+  
+  <!-- Title -->
+  <rect x="0" y="0" width="400" height="50" fill="rgba(0,0,0,0.9)"/>
+  <text x="200" y="30" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="28" font-weight="bold">DICE GAME</text>
+</svg>

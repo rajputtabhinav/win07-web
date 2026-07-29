@@ -1,0 +1,78 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="backgroundGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1F2937;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0F172A;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="lineGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#10B981;stop-opacity:1" />
+      <stop offset="80%" style="stop-color:#F59E0B;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#EF4444;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#backgroundGradient)"/>
+  
+  <!-- Grid -->
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="400" height="300" fill="url(#grid)"/>
+  
+  <!-- Crash Graph -->
+  <g>
+    <!-- Main curve -->
+    <path d="M 50 250 Q 100 240 150 200 Q 200 160 250 100 Q 280 60 300 40" 
+          fill="none" stroke="url(#lineGradient)" stroke-width="4" filter="url(#glow)"/>
+    
+    <!-- Crash explosion -->
+    <g transform="translate(300,40)">
+      <circle cx="0" cy="0" r="15" fill="#EF4444" opacity="0.7"/>
+      <circle cx="0" cy="0" r="10" fill="#F59E0B" opacity="0.8"/>
+      <circle cx="0" cy="0" r="5" fill="#FBBF24"/>
+      <!-- Explosion rays -->
+      <g stroke="#EF4444" stroke-width="2" opacity="0.6">
+        <line x1="-20" y1="0" x2="-30" y2="0"/>
+        <line x1="20" y1="0" x2="30" y2="0"/>
+        <line x1="0" y1="-20" x2="0" y2="-30"/>
+        <line x1="0" y1="20" x2="0" y2="30"/>
+        <line x1="-14" y1="-14" x2="-21" y2="-21"/>
+        <line x1="14" y1="-14" x2="21" y2="-21"/>
+        <line x1="-14" y1="14" x2="-21" y2="21"/>
+        <line x1="14" y1="14" x2="21" y2="21"/>
+      </g>
+    </g>
+  </g>
+  
+  <!-- Multiplier Display -->
+  <rect x="150" y="200" width="120" height="45" rx="22" fill="rgba(0,0,0,0.8)"/>
+  <text x="210" y="230" text-anchor="middle" fill="#EF4444" font-family="Arial, sans-serif" font-size="26" font-weight="bold">CRASHED!</text>
+  
+  <!-- Previous multipliers -->
+  <g transform="translate(50,50)">
+    <rect x="0" y="0" width="60" height="25" rx="12" fill="rgba(16,185,129,0.2)"/>
+    <text x="30" y="17" text-anchor="middle" fill="#10B981" font-family="Arial, sans-serif" font-size="14" font-weight="bold">3.45x</text>
+  </g>
+  <g transform="translate(120,50)">
+    <rect x="0" y="0" width="60" height="25" rx="12" fill="rgba(239,68,68,0.2)"/>
+    <text x="30" y="17" text-anchor="middle" fill="#EF4444" font-family="Arial, sans-serif" font-size="14" font-weight="bold">1.23x</text>
+  </g>
+  <g transform="translate(190,50)">
+    <rect x="0" y="0" width="60" height="25" rx="12" fill="rgba(245,158,11,0.2)"/>
+    <text x="30" y="17" text-anchor="middle" fill="#F59E0B" font-family="Arial, sans-serif" font-size="14" font-weight="bold">8.90x</text>
+  </g>
+  
+  <!-- Title -->
+  <rect x="0" y="0" width="400" height="50" fill="rgba(0,0,0,0.9)"/>
+  <text x="200" y="30" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="28" font-weight="bold">CRASH</text>
+</svg>

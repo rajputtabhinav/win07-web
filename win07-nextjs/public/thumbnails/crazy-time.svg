@@ -1,0 +1,150 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="backgroundGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1F2937;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0F172A;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="wheelGradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#FBBF24;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F59E0B;stop-opacity:1" />
+    </radialGradient>
+    <linearGradient id="rainbowGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#EF4444;stop-opacity:1" />
+      <stop offset="16.66%" style="stop-color:#F59E0B;stop-opacity:1" />
+      <stop offset="33.33%" style="stop-color:#FBBF24;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#10B981;stop-opacity:1" />
+      <stop offset="66.66%" style="stop-color:#3B82F6;stop-opacity:1" />
+      <stop offset="83.33%" style="stop-color:#8B5CF6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#EC4899;stop-opacity:1" />
+    </radialGradient>
+    <filter id="neonGlow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="sparkle">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#backgroundGradient)"/>
+  
+  <!-- Rainbow background effect -->
+  <rect x="0" y="0" width="400" height="300" fill="url(#rainbowGradient)" opacity="0.1"/>
+  
+  <!-- Main wheel -->
+  <circle cx="200" cy="150" r="100" fill="url(#wheelGradient)" filter="url(#neonGlow)"/>
+  <circle cx="200" cy="150" r="95" fill="none" stroke="white" stroke-width="3"/>
+  
+  <!-- Wheel segments with bonus games -->
+  <g transform="translate(200,150)">
+    <!-- Segment 1: CRAZY TIME -->
+    <path d="M 0,-90 A 90,90 0 0,1 77.78,-43.54 L 0,0 Z" fill="#EF4444" stroke="white" stroke-width="2"/>
+    <text x="30" y="-35" fill="white" font-family="Arial, sans-serif" font-size="8" font-weight="bold">CRAZY</text>
+    <text x="30" y="-25" fill="white" font-family="Arial, sans-serif" font-size="8" font-weight="bold">TIME</text>
+    
+    <!-- Segment 2: CASH HUNT -->
+    <path d="M 77.78,-43.54 A 90,90 0 0,1 77.78,43.54 L 0,0 Z" fill="#10B981" stroke="white" stroke-width="2"/>
+    <text x="50" y="-5" fill="white" font-family="Arial, sans-serif" font-size="8" font-weight="bold">CASH</text>
+    <text x="50" y="5" fill="white" font-family="Arial, sans-serif" font-size="8" font-weight="bold">HUNT</text>
+    
+    <!-- Segment 3: PACHINKO -->
+    <path d="M 77.78,43.54 A 90,90 0 0,1 0,90 L 0,0 Z" fill="#3B82F6" stroke="white" stroke-width="2"/>
+    <text x="30" y="45" fill="white" font-family="Arial, sans-serif" font-size="7" font-weight="bold">PACHINKO</text>
+    
+    <!-- Segment 4: COIN FLIP -->
+    <path d="M 0,90 A 90,90 0 0,1 -77.78,43.54 L 0,0 Z" fill="#8B5CF6" stroke="white" stroke-width="2"/>
+    <text x="-35" y="45" fill="white" font-family="Arial, sans-serif" font-size="8" font-weight="bold">COIN</text>
+    <text x="-35" y="55" fill="white" font-family="Arial, sans-serif" font-size="8" font-weight="bold">FLIP</text>
+    
+    <!-- Number segments -->
+    <path d="M -77.78,43.54 A 90,90 0 0,1 -77.78,-43.54 L 0,0 Z" fill="#F59E0B" stroke="white" stroke-width="2"/>
+    <text x="-50" y="5" fill="white" font-family="Arial, sans-serif" font-size="16" font-weight="bold">5</text>
+    
+    <path d="M -77.78,-43.54 A 90,90 0 0,1 0,-90 L 0,0 Z" fill="#EC4899" stroke="white" stroke-width="2"/>
+    <text x="-30" y="-35" fill="white" font-family="Arial, sans-serif" font-size="16" font-weight="bold">2</text>
+  </g>
+  
+  <!-- Center multiplier display -->
+  <circle cx="200" cy="150" r="25" fill="rgba(0,0,0,0.8)" stroke="#FBBF24" stroke-width="3"/>
+  <text x="200" y="158" text-anchor="middle" fill="#FBBF24" font-family="Arial, sans-serif" font-size="16" font-weight="bold">500x</text>
+  
+  <!-- Spinning pointer -->
+  <g transform="translate(200,50)">
+    <polygon points="0,0 -8,15 8,15" fill="#FBBF24" filter="url(#neonGlow)"/>
+    <polygon points="0,0 -5,10 5,10" fill="#FDE047"/>
+  </g>
+  
+  <!-- Bonus round indicators -->
+  <g transform="translate(50,50)">
+    <rect x="0" y="0" width="80" height="25" rx="12" fill="rgba(239,68,68,0.8)" filter="url(#sparkle)"/>
+    <text x="40" y="17" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold">BONUS ROUND!</text>
+  </g>
+  
+  <!-- Multiplier history -->
+  <g transform="translate(20,100)">
+    <rect x="0" y="0" width="40" height="20" rx="10" fill="rgba(16,185,129,0.3)"/>
+    <text x="20" y="14" text-anchor="middle" fill="#10B981" font-family="Arial, sans-serif" font-size="10" font-weight="bold">120x</text>
+  </g>
+  
+  <g transform="translate(20,130)">
+    <rect x="0" y="0" width="40" height="20" rx="10" fill="rgba(239,68,68,0.3)"/>
+    <text x="20" y="14" text-anchor="middle" fill="#EF4444" font-family="Arial, sans-serif" font-size="10" font-weight="bold">2x</text>
+  </g>
+  
+  <g transform="translate(20,160)">
+    <rect x="0" y="0" width="40" height="20" rx="10" fill="rgba(139,92,246,0.3)"/>
+    <text x="20" y="14" text-anchor="middle" fill="#8B5CF6" font-family="Arial, sans-serif" font-size="10" font-weight="bold">50x</text>
+  </g>
+  
+  <!-- Live game show elements -->
+  <g transform="translate(320,80)">
+    <rect x="0" y="0" width="60" height="40" rx="10" fill="rgba(0,0,0,0.8)"/>
+    <circle cx="30" cy="15" r="5" fill="#EF4444"/>
+    <text x="30" y="35" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10" font-weight="bold">LIVE</text>
+  </g>
+  
+  <!-- Betting options -->
+  <g transform="translate(300,150)">
+    <rect x="0" y="0" width="30" height="20" rx="5" fill="#F59E0B"/>
+    <text x="15" y="14" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold">5</text>
+  </g>
+  
+  <g transform="translate(340,150)">
+    <rect x="0" y="0" width="30" height="20" rx="5" fill="#EC4899"/>
+    <text x="15" y="14" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold">2</text>
+  </g>
+  
+  <g transform="translate(300,180)">
+    <rect x="0" y="0" width="30" height="20" rx="5" fill="#10B981"/>
+    <text x="15" y="14" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold">1</text>
+  </g>
+  
+  <g transform="translate(340,180)">
+    <rect x="0" y="0" width="30" height="20" rx="5" fill="#FBBF24"/>
+    <text x="15" y="14" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold">10</text>
+  </g>
+  
+  <!-- Sparkles and effects -->
+  <g fill="#FBBF24" opacity="0.8" filter="url(#sparkle)">
+    <polygon points="80,30 82,36 88,36 83,40 85,46 80,42 75,46 77,40 72,36 78,36" transform="scale(0.6)"/>
+    <polygon points="320,40 322,46 328,46 323,50 325,56 320,52 315,56 317,50 312,46 318,46" transform="scale(0.5)"/>
+    <polygon points="60,200 62,206 68,206 63,210 65,216 60,212 55,216 57,210 52,206 58,206" transform="scale(0.4)"/>
+    <polygon points="340,220 342,226 348,226 343,230 345,236 340,232 335,236 337,230 332,226 338,226" transform="scale(0.5)"/>
+  </g>
+  
+  <!-- Win announcement -->
+  <rect x="150" y="250" width="100" height="30" rx="15" fill="rgba(16,185,129,0.9)" filter="url(#neonGlow)"/>
+  <text x="200" y="270" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="16" font-weight="bold">BIG WIN!</text>
+  
+  <!-- Title -->
+  <rect x="0" y="0" width="400" height="50" fill="rgba(0,0,0,0.9)"/>
+  <text x="200" y="30" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="24" font-weight="bold">CRAZY TIME</text>
+</svg>

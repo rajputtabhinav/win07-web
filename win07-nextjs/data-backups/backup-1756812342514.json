@@ -1,0 +1,71 @@
+{
+  "users": [
+    {
+      "key": "user_31rMQnFamkBs2wAwhfz5YhxN7yw",
+      "value": {
+        "id": "user_31rMQnFamkBs2wAwhfz5YhxN7yw",
+        "email": "abhinavrajput2424@gmail.com",
+        "name": "abhinav",
+        "fullName": "Abhinav rajput",
+        "signupDate": "2025-08-27T06:55:24.820Z",
+        "lastLogin": "2025-09-02T11:25:42.391Z",
+        "cashBalance": 0,
+        "bonusBalance": 0,
+        "indCoins": 899,
+        "referralCount": 0,
+        "referralEarnings": 0,
+        "totalDeposits": 0,
+        "totalWithdrawals": 0,
+        "gamesPlayed": 0,
+        "totalWinnings": 0,
+        "totalLosses": 0,
+        "tier": "Basic",
+        "lastActivity": "2025-09-02T11:25:42.391Z",
+        "status": "online",
+        "adminAccess": {
+          "plan": "trial",
+          "notificationsRemaining": 5
+        },
+        "withdrawnToday": 0,
+        "lastWithdrawalDate": null,
+        "totalTransactions": 0,
+        "profileImage": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18zMXJNUXFYcFhFTVlpZjkzZWJ1ODdTRjJNd3cifQ",
+        "emailVerified": true,
+        "isNewUser": true,
+        "loginMethod": "clerk",
+        "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+        "timestamp": "2025-09-02T11:25:41.836Z",
+        "lastUpdated": "2025-09-02T11:25:42.485Z"
+      }
+    }
+  ],
+  "transactions": [],
+  "withdrawalRequests": [],
+  "userMemories": [],
+  "gameActivity": [],
+  "liveEvents": [
+    {
+      "type": "signup",
+      "userId": "user_31rMQnFamkBs2wAwhfz5YhxN7yw",
+      "userName": "abhinav",
+      "description": "abhinav joined WIN07Pro! 🎉",
+      "amount": 0,
+      "timestamp": "2025-09-02T11:25:42.506Z",
+      "tier": "Basic",
+      "extraData": {
+        "isNewUser": true,
+        "loginMethod": "clerk",
+        "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+        "timestamp": "2025-09-02T11:25:41.836Z"
+      },
+      "id": "1756812342506"
+    }
+  ],
+  "systemStats": {
+    "totalUsers": 1,
+    "activeUsers": 1,
+    "lastUpdated": "2025-09-02T11:25:42.486Z"
+  },
+  "timestamp": "2025-09-02T11:25:42.507Z",
+  "version": "1.0.0"
+}

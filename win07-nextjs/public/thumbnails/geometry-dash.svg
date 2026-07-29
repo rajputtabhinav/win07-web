@@ -1,0 +1,109 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="backgroundGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1E3A8A;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#7C3AED;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1F2937;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="cubeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1E40AF;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#backgroundGradient)"/>
+  
+  <!-- Grid pattern -->
+  <defs>
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="400" height="300" fill="url(#grid)"/>
+  
+  <!-- Ground -->
+  <rect x="0" y="240" width="400" height="60" fill="#374151"/>
+  <rect x="0" y="240" width="400" height="5" fill="#4B5563"/>
+  
+  <!-- Obstacles -->
+  <!-- Spike 1 -->
+  <polygon points="120,240 135,200 150,240" fill="#EF4444" filter="url(#glow)"/>
+  
+  <!-- Spike 2 -->
+  <polygon points="200,240 215,210 230,240" fill="#F59E0B" filter="url(#glow)"/>
+  
+  <!-- Rotating saw -->
+  <g transform="translate(280,220)">
+    <circle cx="0" cy="0" r="20" fill="#DC2626"/>
+    <!-- Saw teeth -->
+    <g fill="#EF4444">
+      <polygon points="0,-20 5,-25 10,-20 5,-15"/>
+      <polygon points="14,-14 19,-19 24,-14 19,-9"/>
+      <polygon points="20,0 25,-5 30,0 25,5"/>
+      <polygon points="14,14 19,19 24,14 19,9"/>
+      <polygon points="0,20 5,25 10,20 5,15"/>
+      <polygon points="-14,14 -19,19 -24,14 -19,9"/>
+      <polygon points="-20,0 -25,5 -30,0 -25,-5"/>
+      <polygon points="-14,-14 -19,-19 -24,-14 -19,-9"/>
+    </g>
+    <circle cx="0" cy="0" r="8" fill="#1F2937"/>
+  </g>
+  
+  <!-- Player cube with trail -->
+  <g>
+    <!-- Trail -->
+    <g opacity="0.6">
+      <rect x="40" y="210" width="15" height="15" fill="#3B82F6" opacity="0.3"/>
+      <rect x="50" y="205" width="15" height="15" fill="#3B82F6" opacity="0.5"/>
+      <rect x="60" y="200" width="15" height="15" fill="#3B82F6" opacity="0.7"/>
+    </g>
+    
+    <!-- Main player cube -->
+    <g transform="translate(85,195) rotate(15)">
+      <rect x="-15" y="-15" width="30" height="30" fill="url(#cubeGradient)" filter="url(#glow)"/>
+      <!-- Face -->
+      <rect x="-8" y="-8" width="4" height="4" fill="white"/>
+      <rect x="4" y="-8" width="4" height="4" fill="white"/>
+      <rect x="-6" y="2" width="12" height="3" fill="white"/>
+    </g>
+  </g>
+  
+  <!-- Jump arc indicator -->
+  <path d="M 85 210 Q 110 170 135 200" fill="none" stroke="#3B82F6" stroke-width="2" stroke-dasharray="5,5" opacity="0.7"/>
+  
+  <!-- Level indicator -->
+  <rect x="20" y="20" width="80" height="30" rx="15" fill="rgba(0,0,0,0.8)"/>
+  <text x="60" y="40" text-anchor="middle" fill="#FBBF24" font-family="Arial, sans-serif" font-size="18" font-weight="bold">LEVEL 1</text>
+  
+  <!-- Progress bar -->
+  <rect x="20" y="60" width="200" height="8" rx="4" fill="rgba(0,0,0,0.5)"/>
+  <rect x="20" y="60" width="60" height="8" rx="4" fill="#10B981"/>
+  <text x="125" y="75" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12">30%</text>
+  
+  <!-- Stars/collectibles -->
+  <g fill="#FBBF24" opacity="0.8">
+    <polygon points="160,120 162,126 168,126 163,130 165,136 160,132 155,136 157,130 152,126 158,126" transform="scale(1.2)"/>
+    <polygon points="320,100 322,106 328,106 323,110 325,116 320,112 315,116 317,110 312,106 318,106"/>
+    <polygon points="250,80 252,86 258,86 253,90 255,96 250,92 245,96 247,90 242,86 248,86" transform="scale(0.8)"/>
+  </g>
+  
+  <!-- Speed lines -->
+  <g stroke="rgba(255,255,255,0.3)" stroke-width="2" opacity="0.6">
+    <line x1="0" y1="180" x2="30" y2="180"/>
+    <line x1="0" y1="190" x2="25" y2="190"/>
+    <line x1="0" y1="200" x2="35" y2="200"/>
+    <line x1="0" y1="210" x2="20" y2="210"/>
+  </g>
+  
+  <!-- Title -->
+  <rect x="0" y="0" width="400" height="50" fill="rgba(0,0,0,0.9)"/>
+  <text x="200" y="30" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="24" font-weight="bold">GEOMETRY DASH</text>
+</svg>

@@ -1,0 +1,171 @@
+{
+  "users": [
+    {
+      "key": "user_31rMQnFamkBs2wAwhfz5YhxN7yw",
+      "value": {
+        "id": "user_31rMQnFamkBs2wAwhfz5YhxN7yw",
+        "email": "abhinavrajput2424@gmail.com",
+        "name": "abhinav",
+        "fullName": "Abhinav rajput",
+        "signupDate": "2025-08-27T06:55:24.820Z",
+        "lastLogin": "2025-09-02T11:25:42.391Z",
+        "cashBalance": 0,
+        "bonusBalance": 0,
+        "indCoins": 899,
+        "referralCount": 0,
+        "referralEarnings": 0,
+        "totalDeposits": 0,
+        "totalWithdrawals": 0,
+        "gamesPlayed": 0,
+        "totalWinnings": 0,
+        "totalLosses": 0,
+        "tier": "Basic",
+        "lastActivity": "2025-09-02T11:25:42.391Z",
+        "status": "online",
+        "adminAccess": {
+          "plan": "trial",
+          "notificationsRemaining": 5
+        },
+        "withdrawnToday": 0,
+        "lastWithdrawalDate": null,
+        "totalTransactions": 0,
+        "profileImage": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18zMXJNUXFYcFhFTVlpZjkzZWJ1ODdTRjJNd3cifQ",
+        "emailVerified": true,
+        "isNewUser": true,
+        "loginMethod": "clerk",
+        "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+        "timestamp": "2025-09-02T11:25:41.836Z",
+        "lastUpdated": "2025-09-02T11:25:42.485Z"
+      }
+    }
+  ],
+  "transactions": [],
+  "withdrawalRequests": [],
+  "userMemories": [
+    {
+      "key": "user_31rMQnFamkBs2wAwhfz5YhxN7yw",
+      "value": {
+        "userId": "user_31rMQnFamkBs2wAwhfz5YhxN7yw",
+        "interactions": [
+          {
+            "type": "support",
+            "timestamp": "2025-09-02T11:31:09.473Z",
+            "details": {
+              "eventType": "signup",
+              "amount": 0,
+              "isNewUser": true,
+              "loginMethod": "clerk",
+              "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+              "timestamp": "2025-09-02T11:31:09.472Z"
+            },
+            "outcome": "pending",
+            "id": "int_1756812669540_6ogiunpl5"
+          },
+          {
+            "type": "support",
+            "timestamp": "2025-09-02T11:30:48.014Z",
+            "details": {
+              "eventType": "heartbeat"
+            },
+            "outcome": "pending",
+            "id": "int_1756812648100_8ra2a7sf9"
+          },
+          {
+            "type": "support",
+            "timestamp": "2025-09-02T11:30:12.999Z",
+            "details": {
+              "eventType": "heartbeat"
+            },
+            "outcome": "pending",
+            "id": "int_1756812613058_xu2b55zf3"
+          },
+          {
+            "type": "support",
+            "timestamp": "2025-09-02T11:29:43.000Z",
+            "details": {
+              "eventType": "heartbeat"
+            },
+            "outcome": "pending",
+            "id": "int_1756812583055_u3tbu8ci2"
+          },
+          {
+            "type": "support",
+            "timestamp": "2025-09-02T11:29:13.000Z",
+            "details": {
+              "eventType": "heartbeat"
+            },
+            "outcome": "pending",
+            "id": "int_1756812553067_pjbk6c1va"
+          },
+          {
+            "type": "support",
+            "timestamp": "2025-09-02T11:28:42.999Z",
+            "details": {
+              "eventType": "heartbeat"
+            },
+            "outcome": "pending",
+            "id": "int_1756812523064_m37su1uvk"
+          },
+          {
+            "type": "support",
+            "timestamp": "2025-09-02T11:28:13.010Z",
+            "details": {
+              "eventType": "heartbeat"
+            },
+            "outcome": "pending",
+            "id": "int_1756812493077_asijfa1c6"
+          },
+          {
+            "type": "support",
+            "timestamp": "2025-09-02T11:27:43.001Z",
+            "details": {
+              "eventType": "heartbeat"
+            },
+            "outcome": "pending",
+            "id": "int_1756812463076_jwklvo6p6"
+          },
+          {
+            "type": "support",
+            "timestamp": "2025-09-02T11:27:08.004Z",
+            "details": {
+              "eventType": "signup",
+              "amount": 0,
+              "isNewUser": true,
+              "loginMethod": "clerk",
+              "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+              "timestamp": "2025-09-02T11:27:08.003Z"
+            },
+            "outcome": "pending",
+            "id": "int_1756812432384_31gl0e4l2"
+          }
+        ],
+        "preferences": {
+          "favoriteGames": [],
+          "preferredBetRange": {
+            "min": 20,
+            "max": 1000
+          },
+          "playingHours": [],
+          "communicationPreferences": [],
+          "riskTolerance": "medium"
+        },
+        "behaviorPatterns": [],
+        "riskAssessment": {
+          "level": "low",
+          "factors": [],
+          "score": 0,
+          "lastAssessed": "2025-09-02T11:31:10.060Z",
+          "recommendations": [
+            "Continue standard monitoring"
+          ]
+        },
+        "lastUpdated": "2025-09-02T11:31:10.061Z"
+      }
+    }
+  ],
+  "gameActivity": [],
+  "liveEvents": [],
+  "systemStats": {},
+  "timestamp": "2025-09-02T11:57:12.439Z",
+  "version": "1.0.0"
+}

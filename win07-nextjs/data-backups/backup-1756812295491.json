@@ -1,0 +1,66 @@
+{
+  "users": [],
+  "transactions": [],
+  "withdrawalRequests": [],
+  "userMemories": [
+    {
+      "key": "user_31rMQnFamkBs2wAwhfz5YhxN7yw",
+      "value": {
+        "userId": "user_31rMQnFamkBs2wAwhfz5YhxN7yw",
+        "interactions": [
+          {
+            "type": "support",
+            "timestamp": "2025-09-02T11:20:55.013Z",
+            "details": {
+              "eventType": "heartbeat"
+            },
+            "outcome": "pending",
+            "id": "int_1756812055067_m1f9qqtv6"
+          },
+          {
+            "type": "support",
+            "timestamp": "2025-09-02T11:20:25.006Z",
+            "details": {
+              "eventType": "heartbeat"
+            },
+            "outcome": "pending",
+            "id": "int_1756812025048_l54whd7qw"
+          },
+          {
+            "type": "support",
+            "timestamp": "2025-09-02T11:19:55.009Z",
+            "details": {
+              "eventType": "heartbeat"
+            },
+            "outcome": "pending",
+            "id": "int_1756811995278_obe5v9ua0"
+          }
+        ],
+        "preferences": {
+          "favoriteGames": [],
+          "preferredBetRange": {
+            "min": 20,
+            "max": 1000
+          },
+          "playingHours": [],
+          "communicationPreferences": [],
+          "riskTolerance": "medium"
+        },
+        "behaviorPatterns": [],
+        "riskAssessment": {
+          "level": "low",
+          "factors": [],
+          "score": 0,
+          "lastAssessed": "2025-09-02T11:19:55.278Z",
+          "recommendations": []
+        },
+        "lastUpdated": "2025-09-02T11:20:55.672Z"
+      }
+    }
+  ],
+  "gameActivity": [],
+  "liveEvents": [],
+  "systemStats": {},
+  "timestamp": "2025-09-02T11:24:55.279Z",
+  "version": "1.0.0"
+}

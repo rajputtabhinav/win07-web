@@ -1,0 +1,273 @@
+/* Custom Clerk Styling for WIN07 Gaming Platform */
+
+/* Hide development mode warning */
+.cl-internal-b3fm6y,
+.cl-developmentModeWarning,
+.cl-internal-1h7alg4,
+.cl-internal-1ta0xpz {
+  display: none !important;
+}
+
+/* Hide "Secured by Clerk" and development mode text */
+.cl-footer .cl-internal-b3fm6y,
+.cl-footer .cl-internal-1h7alg4,
+[data-localization-key="__internal_development_mode"] {
+  display: none !important;
+}
+
+/* Clean header styling - hide original and replace */
+.cl-headerTitle {
+  text-indent: -9999px !important;
+  overflow: hidden !important;
+  position: relative !important;
+  height: 2.5rem !important;
+  margin-bottom: 0.5rem !important;
+}
+
+.cl-headerTitle::before {
+  content: "Sign in to WIN07" !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  text-indent: 0 !important;
+  color: #F8FAFC !important;
+  font-size: 1.75rem !important;
+  font-weight: 700 !important;
+  text-align: center !important;
+  line-height: 1.2 !important;
+}
+
+/* For Sign Up forms */
+.cl-signUp-start .cl-headerTitle::before {
+  content: "Create your account" !important;
+}
+
+/* Clean subtitle styling */
+.cl-headerSubtitle {
+  text-indent: -9999px !important;
+  overflow: hidden !important;
+  position: relative !important;
+  height: 1.5rem !important;
+  margin-bottom: 1rem !important;
+}
+
+.cl-headerSubtitle::before {
+  content: "India's #1 Gaming Platform" !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  text-indent: 0 !important;
+  color: #CBD5E1 !important;
+  font-size: 0.9rem !important;
+  text-align: center !important;
+  line-height: 1.4 !important;
+}
+
+/* Custom modal backdrop */
+.cl-modalBackdrop {
+  background: rgba(0, 0, 0, 0.8) !important;
+  backdrop-filter: blur(8px) !important;
+}
+
+/* Custom card styling */
+.cl-card {
+  background: rgba(15, 23, 42, 0.95) !important;
+  backdrop-filter: blur(20px) !important;
+  border: 1px solid rgba(148, 163, 184, 0.2) !important;
+  border-radius: 1rem !important;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.8) !important;
+  max-width: 420px !important;
+  width: 100% !important;
+}
+
+/* Removed duplicate header styling - using the custom ones above */
+
+/* Form styling */
+.cl-formFieldInput {
+  background: rgba(30, 41, 59, 0.8) !important;
+  border: 1px solid rgba(148, 163, 184, 0.3) !important;
+  color: #F8FAFC !important;
+  border-radius: 0.75rem !important;
+  padding: 0.75rem !important;
+  font-size: 1rem !important;
+  transition: all 0.2s ease !important;
+}
+
+.cl-formFieldInput:focus {
+  border-color: #8B5CF6 !important;
+  box-shadow: 0 0 0 2px rgba(139, 92, 246, 0.2) !important;
+  outline: none !important;
+}
+
+.cl-formFieldLabel {
+  color: #F8FAFC !important;
+  font-weight: 600 !important;
+  margin-bottom: 0.5rem !important;
+}
+
+/* Button styling */
+.cl-formButtonPrimary {
+  background: linear-gradient(135deg, #8B5CF6 0%, #3B82F6 100%) !important;
+  border: none !important;
+  color: white !important;
+  padding: 0.875rem 1.5rem !important;
+  border-radius: 0.75rem !important;
+  font-weight: 600 !important;
+  font-size: 1rem !important;
+  width: 100% !important;
+  transition: all 0.2s ease !important;
+  cursor: pointer !important;
+}
+
+.cl-formButtonPrimary:hover {
+  background: linear-gradient(135deg, #7C3AED 0%, #2563EB 100%) !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 10px 25px rgba(139, 92, 246, 0.3) !important;
+}
+
+/* Social buttons */
+.cl-socialButtonsBlockButton {
+  background: rgba(30, 41, 59, 0.8) !important;
+  border: 1px solid rgba(148, 163, 184, 0.3) !important;
+  color: #F8FAFC !important;
+  border-radius: 0.75rem !important;
+  padding: 0.75rem !important;
+  transition: all 0.2s ease !important;
+  width: 100% !important;
+  margin-bottom: 0.5rem !important;
+}
+
+.cl-socialButtonsBlockButton:hover {
+  background: rgba(51, 65, 85, 0.8) !important;
+  border-color: #8B5CF6 !important;
+  transform: translateY(-1px) !important;
+}
+
+/* Footer links */
+.cl-footerAction a {
+  color: #8B5CF6 !important;
+  text-decoration: none !important;
+  font-weight: 600 !important;
+  transition: color 0.2s ease !important;
+}
+
+.cl-footerAction a:hover {
+  color: #7C3AED !important;
+}
+
+/* Loading spinner */
+.cl-spinner {
+  border-color: #8B5CF6 !important;
+}
+
+/* Error messages */
+.cl-formFieldError {
+  color: #EF4444 !important;
+  font-size: 0.875rem !important;
+  margin-top: 0.25rem !important;
+}
+
+/* Success messages */
+.cl-formFieldSuccess {
+  color: #10B981 !important;
+  font-size: 0.875rem !important;
+  margin-top: 0.25rem !important;
+}
+
+/* Divider */
+.cl-dividerLine {
+  background: rgba(148, 163, 184, 0.3) !important;
+}
+
+.cl-dividerText {
+  color: #CBD5E1 !important;
+  background: rgba(15, 23, 42, 0.95) !important;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 640px) {
+  .cl-card {
+    margin: 1rem !important;
+    max-width: calc(100vw - 2rem) !important;
+  }
+  
+  .cl-headerTitle {
+    font-size: 1.5rem !important;
+  }
+  
+  .cl-formButtonPrimary {
+    padding: 1rem 1.5rem !important;
+  }
+}
+
+/* Hide all Clerk development warnings and branding */
+.cl-internal-1ta0xpz,
+.cl-internal-b3fm6y,
+.cl-internal-1h7alg4,
+[data-localization-key*="development"],
+[data-localization-key*="__internal"] {
+  display: none !important;
+}
+
+/* Hide footer development text */
+.cl-footer [data-localization-key="footerActionLink__developmentMode"],
+.cl-footer [data-localization-key="footerActionLink__signIn"],
+.cl-footer [data-localization-key="footerActionLink__signUp"] {
+  display: none !important;
+}
+
+/* WIN07 Branding Enhancement */
+.cl-card::after {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
+  font-size: 0.75rem;
+  color: rgba(139, 92, 246, 0.6);
+  font-weight: 500;
+}
+
+/* Custom WIN07 Logo placeholder */
+.cl-logoBox {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin-bottom: 1rem !important;
+}
+
+.cl-logoBox::before {
+  content: "W7" !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 40px !important;
+  height: 40px !important;
+  background: linear-gradient(135deg, #8B5CF6, #3B82F6) !important;
+  color: white !important;
+  font-weight: 700 !important;
+  font-size: 1.2rem !important;
+  border-radius: 8px !important;
+  margin-bottom: 0.5rem !important;
+}
+
+/* Custom gaming theme */
+.cl-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #8B5CF6, #3B82F6, #10B981, #F59E0B, #EF4444);
+  border-radius: 1rem 1rem 0 0;
+}
+
+/* Enhance modal positioning */
+.cl-modal {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 1rem !important;
+}

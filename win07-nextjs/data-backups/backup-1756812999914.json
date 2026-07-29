@@ -1,0 +1,100 @@
+{
+  "users": [
+    {
+      "key": "user_31rMQnFamkBs2wAwhfz5YhxN7yw",
+      "value": {
+        "id": "user_31rMQnFamkBs2wAwhfz5YhxN7yw",
+        "email": "abhinavrajput2424@gmail.com",
+        "name": "abhinav",
+        "fullName": "Abhinav rajput",
+        "signupDate": "2025-08-27T06:55:24.820Z",
+        "lastLogin": "2025-09-02T11:30:48.723Z",
+        "cashBalance": 100,
+        "bonusBalance": 0,
+        "indCoins": 899,
+        "referralCount": 0,
+        "referralEarnings": 0,
+        "totalDeposits": 750,
+        "totalWithdrawals": 0,
+        "gamesPlayed": 2,
+        "totalWinnings": 67.47923446621617,
+        "totalLosses": 50,
+        "tier": "Basic",
+        "lastActivity": "2025-09-02T11:30:48.723Z",
+        "status": "online",
+        "adminAccess": {
+          "plan": "trial",
+          "expiresAt": "2025-08-27T18:29:12.441Z",
+          "notificationsRemaining": 5
+        },
+        "withdrawnToday": 0,
+        "lastWithdrawalDate": null,
+        "totalTransactions": 9,
+        "profileImage": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18zMXJNUXFYcFhFTVlpZjkzZWJ1ODdTRjJNd3cifQ",
+        "emailVerified": true,
+        "lastUpdated": "2025-09-02T11:30:48.780Z"
+      }
+    }
+  ],
+  "transactions": [],
+  "withdrawalRequests": [],
+  "userMemories": [
+    {
+      "key": "user_31rMQnFamkBs2wAwhfz5YhxN7yw",
+      "value": {
+        "userId": "user_31rMQnFamkBs2wAwhfz5YhxN7yw",
+        "interactions": [
+          {
+            "type": "support",
+            "timestamp": "2025-09-02T11:32:16.337Z",
+            "details": {
+              "eventType": "signup",
+              "amount": 0,
+              "isNewUser": true,
+              "loginMethod": "clerk",
+              "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+              "timestamp": "2025-09-02T11:32:16.336Z"
+            },
+            "outcome": "pending",
+            "id": "int_1756812736435_op7w6jvwx"
+          },
+          {
+            "type": "support",
+            "timestamp": "2025-09-02T11:31:39.575Z",
+            "details": {
+              "eventType": "heartbeat"
+            },
+            "outcome": "pending",
+            "id": "int_1756812699905_we0hgfl1g"
+          }
+        ],
+        "preferences": {
+          "favoriteGames": [],
+          "preferredBetRange": {
+            "min": 20,
+            "max": 1000
+          },
+          "playingHours": [],
+          "communicationPreferences": [],
+          "riskTolerance": "medium"
+        },
+        "behaviorPatterns": [],
+        "riskAssessment": {
+          "level": "low",
+          "factors": [],
+          "score": 0,
+          "lastAssessed": "2025-09-02T11:32:16.929Z",
+          "recommendations": [
+            "Continue standard monitoring"
+          ]
+        },
+        "lastUpdated": "2025-09-02T11:32:16.929Z"
+      }
+    }
+  ],
+  "gameActivity": [],
+  "liveEvents": [],
+  "systemStats": {},
+  "timestamp": "2025-09-02T11:36:39.910Z",
+  "version": "1.0.0"
+}
